@@ -11,7 +11,8 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 
 public class TimeClient {
 	
-	public void connect(int port, String host) throws Exception{
+	@SuppressWarnings("SameParameterValue")
+	private void connect(int pPort, String pHost) throws Exception{
 		
 			//配置客戶端NIO线程组
 			EventLoopGroup group = new NioEventLoopGroup();
@@ -22,13 +23,13 @@ public class TimeClient {
 				.handler(new ChannelInitializer<SocketChannel>() {
 			
 					@Override
-					protected void initChannel(SocketChannel arg0) throws Exception {
+					protected void initChannel(SocketChannel arg0)  {
 						arg0.pipeline().addLast(new TimeClientHandler());
 					}
 				});
 				
 				//发起异步连接操作
-			ChannelFuture f = b.connect(host, port).sync();
+			ChannelFuture f = b.connect(pHost, pPort).sync();
 			
 			//等待客户端链路关闭
 				f.channel().closeFuture().sync();
