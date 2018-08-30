@@ -24,4 +24,8 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+workspace.xml
+inspectionProfiles/Project_Default.xml
+
+
 >>>>>>> fe275eb6f496003eedadf65bccdb8e1596d2de78
