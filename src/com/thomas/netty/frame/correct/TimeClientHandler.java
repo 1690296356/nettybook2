@@ -1,4 +1,4 @@
-package com.thomas.netty.frame.fault;
+package com.thomas.netty.frame.correct;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -7,28 +7,22 @@ import io.netty.channel.ChannelHandlerContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.nio.charset.StandardCharsets;
-
 /**
  * @创建人 thomas_liu
- * @创建时间 2018/8/30 16:59
+ * @创建时间 2018/8/30 19:27
  * @描述 TODO
  */
-@SuppressWarnings("unused")
-public class TimeClientHandler  extends ChannelHandlerAdapter {
+public class TimeClientHandler extends ChannelHandlerAdapter {
     // ===========================================================
     // Constants
     // ===========================================================
-    private Logger LOG = LoggerFactory.getLogger(TimeClientHandler.class);
-
-    private int mCounter;
-
-    private byte[] mReq;
+    private static final Logger LOG = LoggerFactory.getLogger(TimeClientHandler.class);
 
     // ===========================================================
     // Fields
     // ===========================================================
-
+    private int mCounter;
+    private byte[] mReq;
     // ===========================================================
     // Constructors
     // ===========================================================
@@ -53,12 +47,12 @@ public class TimeClientHandler  extends ChannelHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        LOG.info("Unecepted exception from downstream : [{}]",cause.getMessage());
-        ctx.close();
+        LOG.info("Unexcepted exception from downstream : [{}]",cause.getMessage());
     }
+
     @Override
-    public void channelActive(ChannelHandlerContext ctx) {
-        ByteBuf message;
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        ByteBuf message = null;
         for (int i = 0; i <100 ; i++) {
             message = Unpooled.buffer(mReq.length);
             message.writeBytes(mReq);
@@ -67,12 +61,9 @@ public class TimeClientHandler  extends ChannelHandlerAdapter {
     }
 
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception{
-        ByteBuf buf = (ByteBuf) msg;
-        byte[] req = new byte[buf.readableBytes()];
-        buf.readBytes(req);
-        String body = new String(req, StandardCharsets.UTF_8);
-        System.out.println("Now is : "+body+" ; the counter is : "+ ++mCounter);
+    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        String body = (String) msg;
+        System.out.println("Now is : "+ body +" ; the counter is : "+ ++mCounter);
     }
 
     // ===========================================================

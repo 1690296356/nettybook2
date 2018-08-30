@@ -42,7 +42,7 @@ public class TimeServer {
     // Methods
     // ===========================================================
     @SuppressWarnings({"WeakerAccess", "Duplicates"})
-    public void bind(int port) throws InterruptedException {
+    public void bind(int port) throws Exception {
         //配置服务端的NIO线程组
         EventLoopGroup mBossGroup = new NioEventLoopGroup();
         EventLoopGroup mWorkerGroup = new NioEventLoopGroup();
@@ -56,6 +56,7 @@ public class TimeServer {
 
             //绑定端口，同步等待成功
             ChannelFuture f = mServerBootstrap.bind(port).sync();
+
             // 等待服务端监听端口关闭
             f.channel().closeFuture().sync();
         }finally {

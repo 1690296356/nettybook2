@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96a52577-520d-416e-afa0-39512d9376b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thomas/netty/basic/TimeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thomas/netty/basic/TimeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServerHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,23 +66,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="5" />
+          <entry key="java" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2220" />
+          <entry key="java" value="4082" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2220" />
+          <entry key="JAVA" value="4082" />
         </counts>
       </usages-collector>
     </session>
@@ -90,16 +92,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="73" column="25" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1837#2127#0" expanded="true" />
+                <element signature="e#2126#2127#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="71" column="25" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="27" />
+            <state relative-caret-position="233">
+              <caret line="72" column="25" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1442#1491#0" expanded="true" />
-                <element signature="e#2926#2927#0" expanded="true" />
-                <element signature="e#2996#2997#0" expanded="true" />
+                <element signature="e#3048#3049#0" expanded="true" />
+                <element signature="e#3118#3119#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,12 +123,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="983">
+              <caret line="52" column="73" lean-forward="true" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2246#2247#0" expanded="true" />
-                <element signature="e#2273#2274#0" expanded="true" />
+                <element signature="e#2216#2217#0" expanded="true" />
+                <element signature="e#2243#2244#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClientHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="70" column="36" lean-forward="true" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,28 +151,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1392">
-              <caret line="76" column="61" lean-forward="true" selection-start-line="76" selection-start-column="61" selection-end-line="76" selection-end-column="61" />
+            <state relative-caret-position="225">
+              <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1480#1529#0" expanded="true" />
-                <element signature="e#1660#1946#0" expanded="true" />
-                <element signature="e#1945#1946#0" expanded="true" />
+                <element signature="e#1935#2251#0" expanded="true" />
+                <element signature="e#2250#2251#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClientHandler.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+            <state relative-caret-position="233">
+              <caret line="65" column="82" lean-forward="true" selection-start-line="65" selection-start-column="82" selection-end-line="65" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#363#390#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="69" column="25" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,6 +213,7 @@
     <findStrings>
       <find>ChannelFutrue</find>
       <find>StandardCharsets</find>
+      <find>QUERY TIME ORD</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -177,11 +229,15 @@
         <option value="$PROJECT_DIR$/src/com/thomas/netty/basic/TimeServer.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/basic/TimeServerHandler.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/basic/TimeClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServer.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/basic/TimeClient.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServer.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClient.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServer.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClient.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClientHandler.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClientHandler.java" />
       </list>
     </option>
   </component>
@@ -222,7 +278,9 @@
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -252,7 +310,15 @@
               <item name="nettybook2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="frame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nettybook2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nettybook2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="frame" type="462c0819:PsiDirectoryNode" />
+              <item name="correct" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,7 +395,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535625280739" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535630024282" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -348,13 +414,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TimeClient (1)">
+  <component name="RunManager" selected="Application.TimeClient (2)">
     <configuration name="TimeClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thomas.netty.frame.fault.TimeClient" />
       <module name="nettybook2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.thomas.netty.frame.fault.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeClient (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.frame.correct.TimeClient" />
+      <module name="nettybook2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thomas.netty.frame.correct.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -388,12 +467,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.basic.TimeServer" />
+    <configuration name="TimeServer (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.frame.correct.TimeServer" />
       <module name="nettybook2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thomas.netty.basic.*" />
+          <option name="PATTERN" value="com.thomas.netty.frame.correct.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -402,17 +481,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TimeServer" />
       <item itemvalue="Application.TimeClient" />
       <item itemvalue="Application.TimeServer (1)" />
       <item itemvalue="Application.TimeClient (1)" />
+      <item itemvalue="Application.TimeServer (2)" />
+      <item itemvalue="Application.TimeClient (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TimeClient (2)" />
+        <item itemvalue="Application.TimeServer (2)" />
         <item itemvalue="Application.TimeClient (1)" />
         <item itemvalue="Application.TimeServer (1)" />
         <item itemvalue="Application.TimeClient" />
-        <item itemvalue="Application.TimeServer" />
       </list>
     </recent_temporary>
   </component>
@@ -430,27 +511,28 @@
       <workItem from="1535136640138" duration="101000" />
       <workItem from="1535172831897" duration="2077000" />
       <workItem from="1535166171684" duration="161000" />
-      <workItem from="1535615207318" duration="8708000" />
+      <workItem from="1535615207318" duration="13310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12241000" />
+    <option name="totallyTimeSpent" value="16843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" side_tool="true" visible="true" weight="0.20761803" />
+      <window_info content_ui="combo" id="Project" order="5" side_tool="true" visible="true" weight="0.20761803" />
       <window_info id="Favorites" order="6" side_tool="true" weight="0.3299356" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32161874" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32161874" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.399361" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -562,53 +644,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/handler/codec/LineBasedFrameDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="71" column="25" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="27" />
+        <state relative-caret-position="-1192">
+          <caret line="99" column="17" lean-forward="true" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
+          <folding>
+            <element signature="e#1772#1773#0" expanded="true" />
+            <element signature="e#1816#1817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1442#1491#0" expanded="true" />
-            <element signature="e#2926#2927#0" expanded="true" />
-            <element signature="e#2996#2997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="65" column="82" lean-forward="true" selection-start-line="65" selection-start-column="82" selection-end-line="65" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="983">
+          <caret line="52" column="73" lean-forward="true" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2246#2247#0" expanded="true" />
-            <element signature="e#2273#2274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="76" column="61" lean-forward="true" selection-start-line="76" selection-start-column="61" selection-end-line="76" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1480#1529#0" expanded="true" />
-            <element signature="e#1660#1946#0" expanded="true" />
-            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
+            <element signature="e#2243#2244#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+        <state relative-caret-position="133">
+          <caret line="70" column="36" lean-forward="true" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#363#390#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3048#3049#0" expanded="true" />
+            <element signature="e#3118#3119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1935#2251#0" expanded="true" />
+            <element signature="e#2250#2251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="73" column="25" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1837#2127#0" expanded="true" />
+            <element signature="e#2126#2127#0" expanded="true" />
           </folding>
         </state>
       </provider>
