@@ -2,15 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96a52577-520d-416e-afa0-39512d9376b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubscribeReqProto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubscribeRespProto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/TestSubscribeReqProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/MarshallingCodeCFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/http/fileServer/HttpFileServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/http/fileServer/HttpFileServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/HttpFileServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/OrderFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Shipping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/TestOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/client/HttpXmlClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/client/HttpXmlClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/AbstractHttpXmlDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/AbstractHttpXmlEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlRequestDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlResponseDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlResponseEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/server/HttpXmlServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/server/HttpXmlServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/websocket/server/WebSocketServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thomas/netty/protocol/websocket/server/WebsocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/WebSockServer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,39 +88,47 @@
     <session id="-2133665049">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.2" value="8" />
+          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
+          <entry key="class" value="6" />
           <entry key="fxml" value="1" />
-          <entry key="java" value="52" />
+          <entry key="html" value="2" />
+          <entry key="java" value="102" />
           <entry key="pom" value="1" />
-          <entry key="xml" value="4" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="52" />
-          <entry key="XML" value="6" />
+          <entry key="CLASS" value="6" />
+          <entry key="HTML" value="2" />
+          <entry key="JAVA" value="102" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12680" />
-          <entry key="xml" value="22" />
+          <entry key="dummy" value="1" />
+          <entry key="html" value="829" />
+          <entry key="java" value="28683" />
+          <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12680" />
-          <entry key="XML" value="22" />
+          <entry key="HTML" value="829" />
+          <entry key="JAVA" value="28683" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="28" />
         </counts>
       </usages-collector>
     </session>
@@ -108,33 +141,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqServer.java">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/websocket/server/WebsocketServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="84" column="25" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="27" />
+            <state relative-caret-position="1850">
+              <caret line="85" column="25" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2415#3151#0" expanded="true" />
-                <element signature="e#3150#3151#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqClient.java">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/websocket/server/WebSocketServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="79" column="25" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="27" />
+            <state relative-caret-position="1775">
+              <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/TestSubscribeReqProto.java">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="66" column="81" lean-forward="true" selection-start-line="66" selection-start-column="81" selection-end-line="66" selection-end-column="81" />
+            <state relative-caret-position="335">
+              <caret line="54" column="25" lean-forward="true" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,10 +177,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqServerHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="61" column="98" selection-start-line="61" selection-start-column="98" selection-end-line="61" selection-end-column="98" />
+            <state relative-caret-position="198">
+              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,12 +189,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqClientHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="39" selection-start-column="8" selection-end-column="39" />
+            <state relative-caret-position="98">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbClientHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/WebSockServer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,6 +241,10 @@
       <find>QUERY TIME ORD</find>
       <find>com.nio.serlizable</find>
       <find>com.phei.netty.codec.protobuf</find>
+      <find>HttpRequest</find>
+      <find>谚语查询结果</find>
+      <find>谚语字典查询?</find>
+      <find>谚语字典查询？</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -196,23 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/basic/TimeServer.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/basic/TimeServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/basic/TimeClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/basic/TimeClient.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServer.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClient.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServer.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClient.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/delimiter.fxml" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/delimiter/EchoServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/delimiter/EchoClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/delimiter/EchoServer.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/delimiter/EchoClient.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fixedLen/EchoServerHandler.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/frame/fixedLen/EchoServer.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/serializable/UserInfo.java" />
@@ -227,11 +272,43 @@
         <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubscribeReqProto.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubscribeRespProto.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqServer.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqClient.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqServerHandler.java" />
         <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/TestSubscribeReqProto.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqServer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/MarshallingCodeCFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqClient.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqServer.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/HttpFileServer.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/http/fileServer/HttpFileServer.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Customer.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Order.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Address.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Shipping.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/OrderFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/http/fileServer/HttpFileServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/TestOrder.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/AbstractHttpXmlDecoder.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/AbstractHttpXmlEncoder.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlResponse.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlRequest.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/client/HttpXmlClientHandle.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlResponseEncoder.java" />
+        <option value="$PROJECT_DIR$/src/resources/WebSockServer.html" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/server/HttpXmlServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlRequestDecoder.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlResponseDecoder.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/client/HttpXmlClient.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/server/HttpXmlServer.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/websocket/server/WebsocketServer.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/websocket/server/WebSocketServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbServer.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbClient.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbServerHandler.java" />
       </list>
     </option>
   </component>
@@ -267,9 +344,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2011" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -367,15 +444,21 @@
               <item name="nettybook2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="codec" type="462c0819:PsiDirectoryNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nettybook2" type="b2602c69:ProjectViewProjectNode" />
               <item name="nettybook2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="codec" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="udp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nettybook2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nettybook2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -388,10 +471,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537963686795" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/protobuf-java-2.5.0.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547518539056" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jboss-marshalling-1.3.0.CR9.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
@@ -403,6 +486,8 @@
       <recent name="com.thomas.netty.codec.protobuf" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEAHouse\nettybook2\src\resources" />
+      <recent name="D:\IDEAHouse\nettybook2\lib" />
       <recent name="D:\IDEAHouse\nettybook2\src\com\thomas\netty\codec\protobuf" />
     </key>
   </component>
@@ -418,13 +503,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SubReqClient (1)">
-    <configuration name="SubReqClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.codec.protobuf.SubReqClient" />
+  <component name="RunManager" selected="Application.ChineseProverbClient">
+    <configuration name="ChineseProverbClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.protocol.udp.ChineseProverbClient" />
       <module name="nettybook2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thomas.netty.codec.protobuf.*" />
+          <option name="PATTERN" value="com.thomas.netty.protocol.udp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -432,12 +517,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubReqClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.codec.serializable.netty.SubReqClient" />
+    <configuration name="ChineseProverbServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.protocol.udp.ChineseProverbServer" />
       <module name="nettybook2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thomas.netty.codec.serializable.netty.*" />
+          <option name="PATTERN" value="com.thomas.netty.protocol.udp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -445,12 +530,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubReqServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.codec.protobuf.SubReqServer" />
+    <configuration name="SubReqClient (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.codec.marshalling.SubReqClient" />
       <module name="nettybook2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thomas.netty.codec.protobuf.*" />
+          <option name="PATTERN" value="com.thomas.netty.codec.marshalling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -458,12 +543,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubReqServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.codec.serializable.netty.SubReqServer" />
+    <configuration name="TestOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.protocol.http.xml.TestOrder" />
       <module name="nettybook2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thomas.netty.codec.serializable.netty.*" />
+          <option name="PATTERN" value="com.thomas.netty.protocol.http.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -471,12 +556,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSubscribeReqProto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.codec.protobuf.TestSubscribeReqProto" />
+    <configuration name="WebsocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thomas.netty.protocol.websocket.server.WebsocketServer" />
       <module name="nettybook2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thomas.netty.codec.protobuf.*" />
+          <option name="PATTERN" value="com.thomas.netty.protocol.websocket.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -485,19 +570,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SubReqServer" />
-      <item itemvalue="Application.SubReqClient" />
-      <item itemvalue="Application.TestSubscribeReqProto" />
-      <item itemvalue="Application.SubReqServer (1)" />
-      <item itemvalue="Application.SubReqClient (1)" />
+      <item itemvalue="Application.SubReqClient (2)" />
+      <item itemvalue="Application.TestOrder" />
+      <item itemvalue="Application.WebsocketServer" />
+      <item itemvalue="Application.ChineseProverbServer" />
+      <item itemvalue="Application.ChineseProverbClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SubReqClient (1)" />
-        <item itemvalue="Application.SubReqServer (1)" />
-        <item itemvalue="Application.TestSubscribeReqProto" />
-        <item itemvalue="Application.SubReqClient" />
-        <item itemvalue="Application.SubReqServer" />
+        <item itemvalue="Application.ChineseProverbClient" />
+        <item itemvalue="Application.ChineseProverbServer" />
+        <item itemvalue="Application.WebsocketServer" />
+        <item itemvalue="Application.TestOrder" />
+        <item itemvalue="Application.SubReqClient (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -520,12 +605,27 @@
       <workItem from="1535698287610" duration="8115000" />
       <workItem from="1535939763150" duration="10892000" />
       <workItem from="1537862507162" duration="4972000" />
-      <workItem from="1537924169247" duration="17403000" />
+      <workItem from="1537924169247" duration="17568000" />
+      <workItem from="1538096814689" duration="1474000" />
+      <workItem from="1538269052865" duration="17585000" />
+      <workItem from="1538982862656" duration="3269000" />
+      <workItem from="1541057680961" duration="8016000" />
+      <workItem from="1545805908068" duration="1242000" />
+      <workItem from="1545962628400" duration="3106000" />
+      <workItem from="1546063571269" duration="9843000" />
+      <workItem from="1546505017626" duration="1679000" />
+      <workItem from="1546825642176" duration="10763000" />
+      <workItem from="1546910553712" duration="19287000" />
+      <workItem from="1547000062693" duration="11435000" />
+      <workItem from="1547083113082" duration="18958000" />
+      <workItem from="1547172043755" duration="8747000" />
+      <workItem from="1547429872317" duration="11916000" />
+      <workItem from="1547514994095" duration="3421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68639000" />
+    <option name="totallyTimeSpent" value="199545000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -546,11 +646,11 @@
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" side_tool="true" visible="true" weight="0.222103" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" side_tool="true" visible="true" weight="0.2693133" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.25026625" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.371672" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29286474" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26411074" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25452608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290735" />
@@ -558,7 +658,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32800853" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.021299254" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.42917997" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -603,268 +703,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/channel/EventLoopGroup.class" />
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/basic/TimeServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/basic/TimeClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/basic/TimeServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software/java/jdk1.8/jre/lib/rt.jar!/sun/nio/ch/SocketChannelImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="857" selection-start-line="857" selection-end-line="857" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/basic/TimeClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/handler/codec/LineBasedFrameDecoder.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1625">
-          <caret line="72" column="25" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="52" column="73" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fault/TimeClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1675">
-          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="65" column="82" selection-start-line="65" selection-start-column="82" selection-end-line="65" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="69" column="25" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/delimiter.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/correct/TimeClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="73" column="25" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1-sources.jar!/io/netty/channel/socket/nio/NioServerSocketChannel.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/delimiter/EchoClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="51" column="75" lean-forward="true" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/delimiter/EchoClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="56" column="33" lean-forward="true" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2570#2571#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fixedLen/EchoServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="81" column="43" lean-forward="true" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/fixedLen/EchoServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/delimiter/EchoServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/frame/delimiter/EchoServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="57" column="58" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/serializable/TestUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/serializable/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#169#196#0" expanded="true" />
-            <element signature="e#1203#1230#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1271#1298#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1363#1390#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1396#1397#0" expanded="true" />
-            <element signature="e#1424#1451#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1836#1885#0" expanded="true" />
-            <element signature="e#2227#2276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/serializable/PerformTestUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/pojo/SubscribeReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1750">
-          <caret line="90" column="95" selection-start-line="90" selection-start-column="95" selection-end-line="90" selection-end-column="95" />
-          <folding>
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1233#1234#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1364#1365#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
-            <element signature="e#1633#1634#0" expanded="true" />
-            <element signature="e#1681#1682#0" expanded="true" />
-            <element signature="e#1716#1717#0" expanded="true" />
-            <element signature="e#1747#1748#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#1835#1836#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/pojo/SubscribeResp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/serializable/netty/SubReqServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1850">
-          <caret line="86" column="25" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/serializable/netty/SubReqServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/serializable/netty/SubReqClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -873,9 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
           <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -886,25 +725,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-start-column="8" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.pom">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubscribeRespProto.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -915,37 +737,328 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="1775">
           <caret line="84" column="25" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2415#3151#0" expanded="true" />
-            <element signature="e#3150#3151#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqServerHandler.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/handler/codec/protobuf/ProtobufVarint32FrameDecoder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="61" column="98" selection-start-line="61" selection-start-column="98" selection-end-line="61" selection-end-column="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="79" column="25" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="27" />
+        <state relative-caret-position="175">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/TestSubscribeReqProto.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1525">
+          <caret line="66" column="81" selection-start-line="66" selection-start-column="81" selection-end-line="66" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="83" column="48" lean-forward="true" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/protobuf/SubReqClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/MarshallingCodeCFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/software/java/jdk1.8/jre/lib/rt.jar!/sun/nio/ch/SocketChannelImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20825">
+          <caret line="858" selection-start-line="858" selection-end-line="858" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/HttpFileServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/handler/codec/http/HttpResponseStatus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/buffer/Unpooled.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8975">
+          <caret line="386" column="29" selection-start-line="386" selection-start-column="29" selection-end-line="386" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/pojo/SubscribeReq.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="66" column="81" lean-forward="true" selection-start-line="66" selection-start-column="81" selection-end-line="66" selection-end-column="81" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/codec/marshalling/SubReqServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/http/fileServer/HttpFileServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1475">
+          <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/util/CharsetUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-815">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Shipping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="90" lean-forward="true" selection-start-line="11" selection-start-column="90" selection-end-line="11" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/http/fileServer/HttpFileServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="165" column="18" selection-start-line="165" selection-start-column="18" selection-end-line="165" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/TestOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3850">
+          <caret line="154" column="34" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/AbstractHttpXmlDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/AbstractHttpXmlEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/server.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/client/HttpXmlClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="58" column="91" selection-start-line="58" selection-start-column="91" selection-end-line="58" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/OrderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlResponseEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="57" column="57" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlResponseDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-868">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/codec/HttpXmlRequestDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/server/HttpXmlServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-643">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/client/HttpXmlClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="64" column="105" lean-forward="true" selection-start-line="63" selection-start-column="11" selection-end-line="64" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/http/xml/server/HttpXmlServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="71" column="7" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="71" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/websocket/server/WebsocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1850">
+          <caret line="85" column="25" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/websocket/server/WebSocketServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1775">
+          <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/WebSockServer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thomas/netty/protocol/udp/ChineseProverbServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="54" column="25" lean-forward="true" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
